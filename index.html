@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="logo">
+        forCast
+    </div>
+    <div class="main">
+        <div class="bg">
+            <img src="/weather-type/rain.jpg" alt="">
+        </div>
+
+            <div class="weather-col">
+                <div class="temp-col">
+                    <div class="temp">
+                        14°
+                    </div>
+                    <div class="place">
+                        <div class="place-info"></div>
+                    </div>
+                </div>
+                <div class="weather-content">
+                    <div class="weather-desc">
+                        hahahah
+                    </div>
+                    <div class="advice">
+                        nsfasfasfa
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="sidebar">
+        <form>
+            <input type="text" placeholder="enter a place">
+            <button><ion-icon name="search-outline"></ion-icon></button>
+        </form>
+        <div id="map">
+
+        </div>
+        <div class="other-contents">
+            <div class="coords">
+                <div class="lat"></div>
+                <div class="long"></div>
+            </div>
+
+            <div class="humidity">
+
+            </div>
+            <div class="wind-info">
+                <div class="windDeg">
+                </div>
+                <div class="windSpeed"></div>
+            </div>
+        <div class="time">
+            <div class="sunrise"></div>
+            <div class="sunset"></div>
+        </div>
+        </div>
+        <div id="barchart_values" style="width: 95%; height: 50%;"></div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
